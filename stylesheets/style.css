@@ -1,0 +1,158 @@
+/* body font family */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(233, 232, 232);
+    font-weight: lighter;
+}
+
+
+/* navbar backgroud and top border color */
+nav{
+    background-color: rgb(233, 232, 232);
+    /* opacity: 80%; */
+    border-top: 3px solid rgb(233, 244, 248);
+    /* border-top: 3px solid rgb(255, 87, 51); */
+    /* padding: 2px 0px 2px 0px; */
+    /* position: fixed; */
+}
+
+
+/* small nav menu button */
+.sm-btn-menu{
+    background-color: teal;
+}
+
+
+/* navbar links decoration */
+.index-link, .about-link, .projects-link, .contact-link, .brandimg-link{
+    cursor: pointer;
+    color: teal;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-inline-end: 20px;
+}
+
+
+/* navbar links hover */
+.index-link:hover, .about-link:hover, .projects-link:hover, .contact-link:hover {
+    color: rgb(255, 87, 51);
+    transition: 0.3s ease-in-out;
+}
+
+
+.main-div{
+    margin: 0 30px 0 30px;
+    /* padding-top: 20px; */
+    background-color: white;
+}
+
+
+.showcase-img{
+    background-image: url(../images/IMG_0552.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    /* margin-top: 90px; */
+    margin: 90px 0px 90px 0px;
+    display: grid;
+    place-items: center;
+}
+
+/* showcase image card */
+.showcase-card{
+    opacity: 80%;
+    background-color: white;
+    position: relative ;
+        /* border-top-left-radius: 3em;
+        border-bottom-right-radius: 3em;
+        border-top-right-radius: 3em;
+        border-bottom-left-radius: 3em;
+        border-right: 3px solid rgb(255, 87, 51);
+        border-bottom: 3px solid rgb(255, 87, 51); */
+    padding: 20px 15px 15px 15px;
+}
+
+
+/* showcase card image */
+.showcase-card-pic{
+    position: relative;
+    width: 200px;
+    border: 5px solid gray;
+    border-radius: 100%;
+    /* border-top-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%; */
+    margin-top: 1em;
+}
+
+
+/* showcase card text */
+.showcase-text{
+    /* width: 50%; */
+    text-align: left;
+    margin: 0px 15px 0px 15opx;
+    /* color: gray; */
+}
+
+/* showcase card contacts */
+.showcase-contact{
+    font-size: 50px;
+    color: gray;
+    margin-bottom: 10px;
+    padding: 0px 5px 0px 5px;
+}
+
+/* headers */
+.header{
+    font-family: 'Fuggles', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Style Script', cursive;
+    color: teal;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+/* skills div*/
+.skills-div{
+    margin-top: 50px;
+    /* border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    border-top: 3px solid teal;
+    border-bottom: 2px solid rgb(255, 87, 51); */
+}
+
+/* projects left button */
+.projects-left-btn{
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+}
+
+/* projects left button */
+.projects-left-btn:hover{
+    color: white;
+}
+
+/* projects right button */
+.projects-right-btn{
+    color: teal;
+    text-decoration: none;
+    /* border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em; */
+}
+
+/* projects button */
+.projects-button-border{
+    border: 2px solid teal;
+    border-radius: 3em;
+    text-align: center;
+}
+
