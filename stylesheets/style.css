@@ -1,19 +1,16 @@
 /* body font family */
 body{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Crimson Pro'; */
+    font-family: 'Crimson Pro', serif;
+    /* font-family: 'Roboto', sans-serif; */
     background-color: rgb(233, 232, 232);
-    font-weight: lighter;
 }
 
 
 /* navbar backgroud and top border color */
 nav{
     background-color: rgb(233, 232, 232);
-    /* opacity: 80%; */
     border-top: 3px solid rgb(233, 244, 248);
-    /* border-top: 3px solid rgb(255, 87, 51); */
-    /* padding: 2px 0px 2px 0px; */
-    /* position: fixed; */
 }
 
 
@@ -41,7 +38,7 @@ nav{
 
 
 .main-div{
-    margin: 0 30px 0 30px;
+    margin: 0 20px 0 20px;
     /* padding-top: 20px; */
     background-color: white;
 }
@@ -60,6 +57,7 @@ nav{
     display: grid;
     place-items: center;
 }
+
 
 /* showcase image card */
 .showcase-card{
@@ -100,7 +98,7 @@ nav{
 
 /* showcase card contacts */
 .showcase-contact{
-    font-size: 50px;
+    font-size: 45px;
     color: gray;
     margin-bottom: 10px;
     padding: 0px 5px 0px 5px;
@@ -125,6 +123,28 @@ nav{
     border-bottom-right-radius: 3em;
     border-top: 3px solid teal;
     border-bottom: 2px solid rgb(255, 87, 51); */
+}
+
+/* medium to large screen skills image */
+.skills-md-image{
+    background-image: url(../images/skills.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* skills success bars */
+.success-bar{
+    background-color: teal;
+    height: 3px;
+}
+
+/* projects images */
+.projects-img{
+    width: 100%;
+    border-radius: 1.5em;
+    border: 1px solid teal;
+    cursor: pointer;
+    margin-top: 40px;
 }
 
 /* projects left button */
@@ -154,5 +174,41 @@ nav{
     border: 2px solid teal;
     border-radius: 3em;
     text-align: center;
+}
+
+
+/* list */
+.list-item{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    /* color: teal; */
+}
+
+/* connect-container */
+.connect-container{
+    width: 75%;
+}
+
+/* connect font awesome */
+.connect-contact{
+    font-size: 40px;
+    color: gray;
+    margin-top: 40px;
+    padding: 0px 50px 0px 0px;
+}
+
+/* production in progress image */
+.progress-production{
+    margin-top: 20px;
+    width: 50%;
+    /* align-items: center; */
+}
+
+/* production in progress btn */
+.progress-production-btn{
+    background-color: teal;
+    color: white;
+    margin-bottom: 40px;
 }
 

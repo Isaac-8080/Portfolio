@@ -1,20 +1,14 @@
-// function darkLightMode() {
-//   document.getElementById('dark-light').style.backgroundColor = 'black';
-//   document.getElementById('dark-light').style.color = 'white';
-//   document.getElementById('dark-light').style.border.color = 'white';
-//   return darkLightMode();
-// }
-
+// A function to display and hide the navigation menu of small screens when clicked on
 
 function displayNone() {
-  document.getElementById("toggle").style.display = 'none';
+  document.querySelector("#toggle").style.display = 'none';
 }
 displayNone();
 
 
 function smallScreensNav() {
 
-  let smallScreensNav = document.getElementById("toggle");
+  let smallScreensNav = document.querySelector("#toggle");
 
   smallScreensNav.style.display = 'hidden';
 
@@ -23,17 +17,23 @@ function smallScreensNav() {
   } else{
     smallScreensNav.style.display = "none";
   }
+
 }
 
 
-// function hide(params) {
-  
-// }
+// function collapseAccordion() {
 
-// function hideSmNavLinks() {
-//   document.querySelector('#toggle').style.display = 'none';
-// }
+//   const collapseAccordion = document.querySelector("#collapseOne");
 
-// function showSmNavLinks() {
-//   document.querySelector('#toggle').style.display = 'block';
+//   // collapseAccordion.style.display = 'hidden';
+
+//   if (collapseAccordion.style.display === "none") {
+
+//     collapseAccordion.style.display = "block";
+
+//   } else{
+
+//     collapseAccordion.style.display = "none";
+
+//   }
 // }
