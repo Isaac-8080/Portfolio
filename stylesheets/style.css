@@ -14,7 +14,7 @@ nav{
 }
 
 
-/* small nav menu button */
+/* small nav toggler menu */
 .sm-btn-menu{
     background-color: teal;
 }
@@ -32,31 +32,30 @@ nav{
     margin-inline-end: 20px;
 }
 
-
 /* navbar links hover */
 .index-link:hover, .about-link:hover, .projects-link:hover, .contact-link:hover {
     color: rgb(255, 87, 51);
     transition: 0.3s ease-in-out;
 }
 
-
 .main-div{
     margin: 0 20px 0 20px;
     /* padding-top: 20px; */
+    border-top-left-radius: 10em;
+    border-bottom-right-radius: 10em;
     background-color: white;
 }
 
-
 .showcase-img-sm{
-    background-image: url(../images/IMG_0552.JPG);
+    /* background-image: url(../images/IMG_0552.JPG); */
+    background-image: linear-gradient(120deg, #ebedee 0%, #fdfbfb 70%);
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     background-size: cover;
     width: 100%;
     height: 80%;
-    /* margin-top: 90px; */
-    margin: 20px 0px 90px 0px;
+    margin: 10px 0px 10px 0px;
     display: grid;
     place-items: center;
 }
@@ -69,8 +68,8 @@ nav{
     background-size: cover;
     width: 100%;
     height: 80%;
-    /* margin-top: 90px; */
-    margin: 90px 0px 90px 0px;
+    border-top-left-radius: 10em;
+    margin: 90px 0px 35px 0px;
     display: grid;
     place-items: center;
 }
@@ -78,15 +77,6 @@ nav{
 
 /* showcase image card */
 .showcase-card{
-    opacity: 80%;
-    background-color: white;
-    position: relative ;
-        /* border-top-left-radius: 3em;
-        border-bottom-right-radius: 3em;
-        border-top-right-radius: 3em;
-        border-bottom-left-radius: 3em;
-        border-right: 3px solid rgb(255, 87, 51);
-        border-bottom: 3px solid rgb(255, 87, 51); */
     padding: 20px 15px 15px 15px;
 }
 
@@ -108,9 +98,9 @@ nav{
 /* showcase card contacts */
 .showcase-contact{
     font-size: 45px;
-    color: gray;
+    /* color: white; */
     margin-bottom: 10px;
-    padding: 0 5px 0 5px;
+    padding: 0 10px 0 10px;
 }
 
 /* headers */
@@ -119,19 +109,18 @@ nav{
     font-family: 'Roboto', sans-serif;
     font-family: 'Style Script', cursive;
     color: teal;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: lighter;
 }
 
 /* skills div*/
 .skills-div{
-    margin-top: 50px;
-    /* border-top-left-radius: 3em;
-    border-top-right-radius: 3em;
-    border-bottom-left-radius: 3em;
-    border-bottom-right-radius: 3em;
-    border-top: 3px solid teal;
-    border-bottom: 2px solid rgb(255, 87, 51); */
+    margin-top: 10px;
+}
+
+/* projects div*/
+.projects-div{
+    margin-top: 10px;
 }
 
 /* medium to large screen skills image */
@@ -139,21 +128,60 @@ nav{
     background-image: url(../images/skills.jpeg);
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 /* skills success bars */
 .success-bar{
-    background-color: teal;
-    height: 3px;
+    /* background-color: teal; */
+    opacity: 80%;
+    height: 15px;
 }
+
+.js-progress{
+    width: 25%;
+}
+
+.git-progress{
+    width: 20%;
+}
+
+.php-progress{
+    width: 40%;
+}
+
+.boots-progress{
+    width: 70%;
+}
+
+.css-progress{
+    width: 80%;
+}
+
+.html-progress{
+    width: 90%;
+}
+
+
+/* projects names */
+.project-name-bg{
+    background-color: rgb(233, 232, 232);
+    /* width: fit-content; */
+    padding: 10px 30px;
+    margin: 0;
+    border: 1px solid teal;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}   
 
 /* projects images */
 .projects-img{
     width: 100%;
-    border-radius: 1.5em;
-    border: 1px solid teal;
+    /* height: 20vh; */
+    border-left: 1px solid teal;
+    border-right: 1px solid teal;
     cursor: pointer;
-    margin-top: 40px;
 }
 
 /* projects left button */
@@ -161,7 +189,6 @@ nav{
     background-color: teal;
     color: white;
     text-decoration: none;
-    border-top-left-radius: 1.5em;
     border-bottom-left-radius: 1.5em;
 }
 
@@ -174,17 +201,51 @@ nav{
 .projects-right-btn{
     color: teal;
     text-decoration: none;
-    /* border-top-left-radius: 1.5em;
-    border-bottom-left-radius: 1.5em; */
+    border: 1px solid teal;
+    border-bottom-right-radius: 1.5em;
 }
 
 /* projects button */
 .projects-button-border{
-    border: 2px solid teal;
-    border-radius: 3em;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
     text-align: center;
 }
 
+.testimonies-div{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    /* scroll-padding: 5px; */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.testimonies-div::-webkit-scrollbar{
+    display: none;
+}
+
+.testimonies-content{
+    width: 100%;
+}
+
+.testimonies-item-sm{
+    /* height: 20vh; */
+    width: 85%;
+    height: 35vh;
+    background-color: #ebedee;
+    display: inline-block;
+}
+
+.testimonies-item-md{
+    /* height: 20vh; */
+    width: 40%;
+    height: 20vh;
+    background-color: #ebedee;
+    display: inline-block;
+}
 
 /* list */
 .list-item{
@@ -207,6 +268,10 @@ nav{
     padding: 0px 50px 0px 0px;
 }
 
+.return-top{
+    margin-right: 15px;
+}
+
 /* production in progress image */
 .progress-production{
     margin-top: 20px;
@@ -220,4 +285,3 @@ nav{
     color: white;
     margin-bottom: 40px;
 }
-
